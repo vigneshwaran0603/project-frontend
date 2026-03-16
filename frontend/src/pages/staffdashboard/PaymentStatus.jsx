@@ -12,7 +12,7 @@ const [report,setReport]=useState(null);
 const fetchReport = async()=>{
 
 const res = await axios.get(
-"http://localhost:4000/fees/report",
+"https://project-backend-kvv2.onrender.com/fees/report",
 {
 params:{
 department,

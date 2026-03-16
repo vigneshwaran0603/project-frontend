@@ -33,7 +33,7 @@ const fetchFees = async () => {
 try {
 
 const res = await fetch(
-"http://localhost:4000/fee-structure",
+"https://project-backend-kvv2.onrender.com/fee-structure",
 {
 headers:{ Authorization:`Bearer ${token}` }
 }
@@ -93,7 +93,7 @@ let res;
 if(editingId){
 
 res = await fetch(
-`http://localhost:4000/fee-structure/${editingId}`,
+`https://project-backend-kvv2.onrender.com/fee-structure/${editingId}`,
 {
 method:"PUT",
 headers:{
@@ -107,7 +107,7 @@ body:JSON.stringify(payload)
 }else{
 
 res = await fetch(
-"http://localhost:4000/fee-structure",
+"https://project-backend-kvv2.onrender.com/fee-structure",
 {
 method:"POST",
 headers:{
@@ -159,7 +159,7 @@ if(!window.confirm("Delete this fee structure?")) return;
 try{
 
 const res = await fetch(
-`http://localhost:4000/fee-structure/${id}`,
+`https://project-backend-kvv2.onrender.com/fee-structure/${id}`,
 {
 method:"DELETE",
 headers:{ Authorization:`Bearer ${token}` }

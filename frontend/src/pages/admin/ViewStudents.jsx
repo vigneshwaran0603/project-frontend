@@ -12,7 +12,7 @@ Trash2
 export default function ViewStudents() {
 
 const navigate = useNavigate();
-const API = "http://localhost:4000";
+const API = "https://project-backend-kvv2.onrender.com";
 const token = localStorage.getItem("token");
 
 const [allStudents,setAllStudents] = useState([]);

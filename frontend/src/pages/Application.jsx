@@ -68,7 +68,7 @@ export default function Application() {
       data.append("marksheet", marksheet);
 
       const response = await axios.post(
-        "http://localhost:4000/application",
+        "https://project-backend-kvv2.onrender.com/application",
         data,
         {
           headers: {

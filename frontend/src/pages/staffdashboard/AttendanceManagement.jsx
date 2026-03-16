@@ -35,7 +35,7 @@ export default function AttendanceManagement() {
     }
 
     const res = await fetch(
-      `http://localhost:4000/attendance/students?department=${department}&year=${Number(year)}&semester=${Number(semester)}`,
+      `https://project-backend-kvv2.onrender.com/attendance/students?department=${department}&year=${Number(year)}&semester=${Number(semester)}`,
       { headers: { Authorization: `Bearer ${token}` } }
     );
 
@@ -57,7 +57,7 @@ export default function AttendanceManagement() {
     try {
 
       const res = await fetch(
-        `http://localhost:4000/attendance/percentage/${student._id}`,
+        `https://project-backend-kvv2.onrender.com/attendance/percentage/${student._id}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -137,7 +137,7 @@ export default function AttendanceManagement() {
     try {
 
       const res = await fetch(
-        "http://localhost:4000/attendance/mark",
+        "https://project-backend-kvv2.onrender.com/attendance/mark",
         {
           method: "POST",
           headers: {

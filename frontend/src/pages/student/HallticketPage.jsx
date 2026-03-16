@@ -9,7 +9,7 @@ export default function HallticketPage() {
 
   const token = localStorage.getItem("token");
 
-  const API = "http://localhost:4000";
+  const API = "https://project-backend-kvv2.onrender.com";
 
   /* --------------------------------
      FETCH HALLTICKET

@@ -23,7 +23,7 @@ fetchStats();
 const fetchStats = async()=>{
 
 const studentRes = await axios.get(
-"http://localhost:4000/staff/students",
+"https://project-backend-kvv2.onrender.com/staff/students",
 { headers:{ Authorization:`Bearer ${token}` } }
 );
 

@@ -41,7 +41,7 @@ export default function AddSubjects() {
     try {
 
       const res = await axios.get(
-        "http://localhost:4000/subjects/student",
+        "https://project-backend-kvv2.onrender.com/subjects/student",
         config
       );
 
@@ -113,7 +113,7 @@ export default function AddSubjects() {
     try {
 
       await axios.post(
-        "http://localhost:4000/subjects",
+        "https://project-backend-kvv2.onrender.com/subjects",
         formData,
         config
       );
@@ -152,7 +152,7 @@ export default function AddSubjects() {
     try {
 
       await axios.put(
-        `http://localhost:4000/subjects/${editingId}`,
+        `https://project-backend-kvv2.onrender.com/subjects/${editingId}`,
         formData,
         config
       );
@@ -195,7 +195,7 @@ export default function AddSubjects() {
     try {
 
       await axios.delete(
-        `http://localhost:4000/subjects/${id}`,
+        `https://project-backend-kvv2.onrender.com/subjects/${id}`,
         config
       );
 

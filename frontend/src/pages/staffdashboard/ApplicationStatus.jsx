@@ -20,7 +20,7 @@ export default function ApplicationStatus() {
 
     try {
 
-      const res = await axios.get("http://localhost:4000/application");
+      const res = await axios.get("https://project-backend-kvv2.onrender.com/application");
 
       const sorted = res.data.sort(
         (a, b) => b.twelthMark - a.twelthMark
@@ -87,7 +87,7 @@ export default function ApplicationStatus() {
     try {
 
       await axios.put(
-        `http://localhost:4000/application/${applicationNo}/stat`,
+        `https://project-backend-kvv2.onrender.com/application/${applicationNo}/stat`,
         { status }
       );
 
@@ -126,7 +126,7 @@ export default function ApplicationStatus() {
       try {
 
         await axios.put(
-          `http://localhost:4000/application/${student.applicationNo}/stat`,
+          `https://project-backend-kvv2.onrender.com/application/${student.applicationNo}/stat`,
           { status }
         );
 

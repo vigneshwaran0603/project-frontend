@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:4000";
+const API = "https://project-backend-kvv2.onrender.com";
 
 export default function StudentAttendancePage() {
 
