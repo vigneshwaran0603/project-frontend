@@ -16,7 +16,7 @@ export default function StudentProfile(){
 const { registerNo } = useParams();
 const navigate = useNavigate();
 
-const API = "https://project-backend-kvv2.onrender.com";
+const API = "https://project-backend-cgtf.onrender.com";
 const token = localStorage.getItem("token");
 
 const [student,setStudent] = useState(null);

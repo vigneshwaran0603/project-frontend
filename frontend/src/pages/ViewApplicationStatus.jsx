@@ -17,7 +17,7 @@ const ViewApplicationStatus = () => {
       setLoading(true);
       setError("");
 
-      const res = await fetch("https://project-backend-kvv2.onrender.com/application");
+      const res = await fetch("https://project-backend-cgtf.onrender.com/application");
       const data = await res.json();
 
       const application = data.find(

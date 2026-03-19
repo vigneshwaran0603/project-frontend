@@ -34,7 +34,7 @@ export default function StudentManagement() {
 
   const getStudents = async () => {
 
-    const res = await fetch("https://project-backend-kvv2.onrender.com/staff/students",{
+    const res = await fetch("https://project-backend-cgtf.onrender.com/staff/students",{
       headers:{
         Authorization:`Bearer ${token}`
       }
@@ -52,7 +52,7 @@ export default function StudentManagement() {
 
   const createStudent = async () => {
 
-    await fetch("https://project-backend-kvv2.onrender.com/staff/create-student",{
+    await fetch("https://project-backend-cgtf.onrender.com/staff/create-student",{
       method:"POST",
       headers:{
         "Content-Type":"application/json",
@@ -73,7 +73,7 @@ export default function StudentManagement() {
 
   const updateStudent = async () => {
 
-    await fetch(`https://project-backend-kvv2.onrender.com/staff/students/${form.registerNo}`,{
+    await fetch(`https://project-backend-cgtf.onrender.com/staff/students/${form.registerNo}`,{
       method:"PUT",
       headers:{
         "Content-Type":"application/json",
@@ -92,7 +92,7 @@ export default function StudentManagement() {
 
   const deleteStudent = async(registerNo)=>{
 
-    await fetch(`https://project-backend-kvv2.onrender.com/staff/students/${registerNo}`,{
+    await fetch(`https://project-backend-cgtf.onrender.com/staff/students/${registerNo}`,{
       method:"DELETE",
       headers:{
         Authorization:`Bearer ${token}`

@@ -37,7 +37,7 @@ function CheckoutForm({ paymentIntentId }) {
 
     if (paymentIntent.status === "succeeded") {
       await axios.post(
-        "https://project-backend-kvv2.onrender.com/fees/payment/verify",
+        "https://project-backend-cgtf.onrender.com/fees/payment/verify",
         { paymentIntentId },
         {
           headers: {
@@ -95,7 +95,7 @@ export default function StudentFeesPayment() {
       setPaid(false);
 
       const res = await axios.post(
-        "https://project-backend-kvv2.onrender.com/fees/calculate",
+        "https://project-backend-cgtf.onrender.com/fees/calculate",
         {
           department,
           year: Number(year),
@@ -133,7 +133,7 @@ export default function StudentFeesPayment() {
     }
 
     const res = await axios.post(
-      "https://project-backend-kvv2.onrender.com/fees/payment/create",
+      "https://project-backend-cgtf.onrender.com/fees/payment/create",
       {
         department,
         year: Number(year),
